@@ -7,13 +7,18 @@ public class IOconsole {
         System.out.print("What is your Favorite drink?");
         String drink = scanner.nextLine(); 
         
-        System.out.println("You like " + drink);
 
         if (args.length > 0) {
-            
-            System.out.println("You like " + args[0]);
+
+            int times = Integer.parseInt(args[0]);
+
+            for (int j =  0; j < times ;j++ ){
+
+            System.out.println("You like " + drink);
+            }
         }
         
         }
 }
+
 
